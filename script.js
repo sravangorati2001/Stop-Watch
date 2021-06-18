@@ -25,9 +25,12 @@ function incrementCount(){
      }
  });
 stop.addEventListener('click',function(){
+    flag=false;
   clearInterval(key);
 });
 reset.addEventListener('click',function(){
+    clearInterval(key);
+    flag=false;
    count=0;
    minutes=0;
    seconds=0;
